@@ -17,15 +17,16 @@ body{
 }
 .container-header{
     overflow: hidden;
+    width: auto;
     display: flex;
     justify-content: center;
+    align-items: center;
     animation: inicio 2s 1;
-    height: 100px;
-    z-index: 100;
+    height: auto;
 }
 .title{
     font-family:'minecraft','raleway';
-    font-size: 200%;
+    font-size: 10vh;
 }
 .first-part{
     color: var(--color-left-header);
@@ -55,7 +56,7 @@ body{
 .container{
     display:flex;
     justify-content: center;
-    margin: 10;
+    margin: 3vh;
     height: auto;
     background: white;
     justify-content: flex-start;
@@ -106,5 +107,5 @@ i{
     0%{transform:translate(-150%)}
 }
 @keyframes contenedor-animation{
-    0%{transform: translate(200px)}
+    0%{transform: translate(400px)}
 }
