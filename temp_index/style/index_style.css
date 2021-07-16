@@ -2,7 +2,7 @@
 
 @font-face {
     font-family:'minecraft';
-    src: url('MinecraftTen-VGORe.ttf');
+    src: url('../assets/MinecraftTen-VGORe.ttf');
 }
 :root{
     --backgroundcolor-right-header: white;
