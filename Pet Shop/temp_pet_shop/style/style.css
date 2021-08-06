@@ -1,0 +1,21 @@
+*{
+    margin:0;
+    box-sizing:border-box;
+}
+
+.descuento{
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    max-height: auto;
+    background: black;
+    color: white;
+}
+.descuento > p{
+    margin:auto
+}
+.descuento div{
+    display: flex;
+    flex-direction: row;
+    margin-right: auto;
+}

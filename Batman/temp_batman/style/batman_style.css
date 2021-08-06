@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+}
+body{
+    background: white;
+    overflow-x: hidden;
+}
+header{
+    background: #E5E5E5;
+    color: #005677;
+    text-align: center;
+}
+header h1{
+    background: #C4C4C4;
+    font-family:Times New Roman;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 84.69%;
+}
+main{
+    margin: 125 230
+}
+li{
+    margin: 10px;
+}
+span{
+    font-weight: bold;
+}
+main h1{
+    color: #005677;
+    background: #C4C4C4;
+    font-family:Times New Roman;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 84.69%;
+}
+footer{
+    background: #005677;
+    width: 100%;
+    height: 40px;
+    top:100%;
+    text-align: center;
+}

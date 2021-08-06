@@ -1,0 +1,115 @@
+/*Reglas generales*/
+*{
+    box-sizing:border-box;
+    margin: 0;
+    overflow-x: hidden;
+    font-family:'Open Sans','Helvetica Neue',Helvetica;
+}
+button{
+    border-style: none;
+    border-radius: 0;
+}
+/*HEADER*/
+.descuento {
+    background:#1CD1B0;
+    font-size: 2vh;
+}
+.descuento p{
+    position:relative;
+    left: 3%;
+}
+.header-title {
+    position:relative;
+    display: flex;
+    background:#00669F;
+    color: #FFFFFF;
+    align-items: center;
+}
+.header-title img{
+    margin: 0 2%;
+}
+header nav{
+    background: #001D2D;
+}
+.nav-header{
+    display: flex;
+    justify-content: flex-end;
+}
+.header-lista{
+    color: white;
+    background:  #001D2D;
+    list-style: none;
+    padding:10px
+}
+.header-lista:hover{
+    background: white;
+    color: #001D2D;
+}
+/*MAIN*/
+
+main{
+    margin: 10%;
+}
+.container{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.s-container{
+    background:#F3F3F3;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width:  30%;
+    height: auto;
+}
+.corazon{
+    position:absolute;
+    height:5vh;
+    left: 30;
+    top: 30;
+}
+.section-logo{
+    position: absolute;
+    max-width: 120px;
+    min-width: 120px;
+    border-radius: 50%;
+    inset: 25% 0 0 35%;
+}
+
+.section-p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:50px 20px;
+    font-size: 20px;
+    text-align:left;
+}
+
+.section-p button{
+    background: #00669F;
+    color: white;
+    margin: 60 0 0 0;
+    width: 110px;
+    height: 50px;
+}
+
+.section-p h1{
+    margin: 20 0;
+}
+
+
+/* FOOTER */
+
+footer {
+    background: #00669F;
+    position: sticky;
+    text-align: center;
+    padding: 40px 0;
+}
+
+footer p{
+    color:white;
+}
+
