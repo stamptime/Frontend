@@ -1,0 +1,41 @@
+@import '_variables';
+
+.header{
+
+    &-nav{
+
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 5%;
+
+        h1{
+            font-size: 2em;
+        }
+
+        ul{
+            display: flex;
+            list-style:none;
+            gap: 20px;
+            font-size: 1.2em;
+
+        }
+    }
+
+    &-main{
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        img{
+
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 50%;
+            height: 350px;
+
+        }
+    }
+}

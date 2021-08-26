@@ -1,0 +1,205 @@
+:root{
+    --monocromatico-oscuro: #222222;
+    --color-resalto: #D01418;
+    --color-fondo:#F3F3F3;
+    --monocromatico-claro:#ffffff;
+    --gratis: #619D00;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family:'Roboto',sans-serif;
+}
+
+/* Header -----------------------------------------0*/
+span{
+    color: var(--color-resalto)
+}
+.menu{
+    background-color: var(--monocromatico-oscuro);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu img{
+    margin: 1.34% 4.83%;
+}
+
+.menu nav ul{
+    display: flex;
+    list-style: none;
+    color: var(--monocromatico-claro);
+    gap: 8px;
+}
+.header-container{
+    display: flex;
+    justify-content:space-between;
+    gap: 40px;
+    margin: 0 4.83% 0 0;
+    align-items: center;
+}
+.menu nav{
+    justify-self: flex-start;
+}
+
+.menu img:nth-of-type(2){
+    height:20px;
+}
+
+h1{
+    margin: 80px 10px 0;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: var(--monocromatico-claro);
+}
+.header{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    background-image: url(../assets/img\ 1.png);
+    height: 512px;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.header button {
+    margin-top:40px;
+    font-size: 25px;
+    border-radius: 5px;
+    width: 220px;
+    height:60px;
+    border: 0 transparent;
+    color: var(--monocromatico-claro);
+    background-color: var(--color-resalto);
+}
+
+/* Main -------------------------*/
+
+
+main{
+    background-color: var(--color-fondo);
+    text-align: center;
+    padding: 25px 0;
+}
+        /* Listado productos destacados*/
+.article-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 25px 0;
+}
+
+.article-container .article-destacado {
+    background-color: var(--monocromatico-claro);
+    width: 265px;
+    height: 322px;
+}
+
+.article-container article img{
+    margin: 30px 0;
+}
+
+hr{
+    margin-bottom: 20px;
+}
+.article-container article h3,h4,p{
+    text-align: left;
+    margin: 0 20px;
+    font-weight: 400;
+}
+
+p{
+    color: var(--gratis);
+}
+
+        /* Listadod productos estrella*/
+.a{
+    background-image: url(../assets/banner\ 1.png);
+}
+.b{
+    background-image: url(../assets/banner\ 1\ \(1\).png);
+}
+.estrella{
+    gap: 3vw;
+}
+.producto-estrella{
+    display: flex;
+    justify-content:flex-end;
+    align-items:center;
+    width: 360px;
+    height: 135px;
+    border-radius:5px;
+    margin: 0 30px;
+}
+
+.producto-estrella h4{
+    color: var(--monocromatico-claro);
+}
+
+/* Footer -_-*/
+
+footer{
+    background-color: var(--monocromatico-oscuro);
+    padding: 33px 0;
+}
+.footer-section{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content:center;
+    align-items: center;
+}
+.container-contactos{
+    position: relative;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.iconos-contacto{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-contactos h4{
+    font-size: 25px;
+    color: var(--monocromatico-claro);
+    text-align: center;
+}
+
+.container-contactos img{
+    height: 26px;
+}
+
+
+.logo{
+    height: 40px;
+    align-self: center;
+}
+
+@media (min-width:600px) {
+    .footer-section{
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 75px;
+    }
+}
+
+@media (max-width:699px){
+    .menu-cart{
+        display: none;
+    }
+    nav{
+        display: none;
+    }
+}
+
+@media (min-width:700px) {
+    .menu-icon{
+        display: none;
+    }
+}
