@@ -1,21 +1,25 @@
 @import '_variables';
 
+
 .header{
 
     &-nav{
 
         display:flex;
         justify-content: space-between;
+        flex-wrap: wrap;
         align-items: center;
-        margin: 0 5%;
+        margin: 20px;
 
         h1{
             font-size: 2em;
         }
 
         ul{
+            
             display: flex;
             list-style:none;
+            flex-wrap: wrap;
             gap: 20px;
             font-size: 1.2em;
 
@@ -25,17 +29,29 @@
     &-main{
 
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        flex-wrap: wrap;
         justify-content: center;
-        align-items: center;
-
-        img{
-
-            background-size: cover;
-            background-repeat: no-repeat;
+        .text{
             width: 50%;
-            height: 350px;
+            h1{
+                text-align: left;
+                font-size:5em;
+                margin: 0 0 5vw;
+            }
+        }
+        .img{
+            width:50%;
+            
+        }
+    }
+}
 
+@media screen and (max-width:650px){
+    .header-nav{
+        justify-content:center;
+        nav{
+            display: none;
         }
     }
 }
